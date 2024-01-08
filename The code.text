@@ -9,24 +9,31 @@ CREATE TABLE Employees (
     DepartmentID INT,
     FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
 );
+
 INSERT INTO Departments (DepartmentID, DepartmentName, Location) VALUES
 (1, 'HR', 'New York'),
 (2, 'Finance', 'San Francisco'),
 (3, 'Marketing', 'Los Angeles');
+
 INSERT INTO Employees (EmployeeID, EmployeeName, DepartmentID) VALUES
 (101, 'John Doe', 1),
 (102, 'Jane Smith', 2),
 (103, 'Robert Johnson', 1),
 (104, 'Emily Davis', 3),
 (105, 'Michael Brown', 2);
+
 Task 1: Add a new department called 'IT' in the Departments table and assign an employee to this department in the Employees table.
+
 -- Add 'IT' department
 INSERT INTO Departments (DepartmentID, DepartmentName, Location) VALUES
 (4, 'IT', 'Seattle');
+
 -- Assign an employee (EmployeeID 106, 'David Wilson') to the 'IT' department
 INSERT INTO Employees (EmployeeID, EmployeeName, DepartmentID) VALUES
 (106, 'David Wilson', 4);
+
 Task 2: Update the location of the 'HR' department from 'New York' to 'Chicago'.
+
 UPDATE Departments
 SET Location = 'Chicago'
 WHERE DepartmentName = 'HR';

@@ -42,4 +42,3 @@ Task 4: Delete the employee named 'Michael Brown' from the Employees table.
 
 DELETE FROM Employees
 WHERE EmployeeName = 'Michael Brown';
-Coll

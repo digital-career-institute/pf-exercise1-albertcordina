@@ -37,7 +37,9 @@ Task 2: Update the location of the 'HR' department from 'New York' to 'Chicago'.
 UPDATE Departments
 SET Location = 'Chicago'
 WHERE DepartmentName = 'HR';
+
 Task 4: Delete the employee named 'Michael Brown' from the Employees table.
+
 DELETE FROM Employees
 WHERE EmployeeName = 'Michael Brown';
 Coll
